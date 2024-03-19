@@ -27,7 +27,31 @@
       <scope>test</scope>
     </dependency>
   </dependencies>
-
+<distributionManagement>
+      <snapshotRepository>
+        <id>nexus</id>
+        <name>devops</name>
+		<url><distributionManagement>
+      <snapshotRepository>
+        <id>crm-project</id>
+        <name>devops markonda</name>
+		<url>http://localhost:8081/repository/javawebapp/</url>
+      </snapshotRepository>
+	  <repository>
+        <id>crm-project</id>
+        <name>devops markonda</name>
+		<url>http://localhost:8081/repository/javawebapp/</url>
+      </repository>
+	
+   </distributionManagement></url>
+      </snapshotRepository>
+	  <repository>
+        <id>nexus</id>
+        <name>devops</name>
+		<url>http://3.88.106.179:8081/devopsmarkonda/repository/crm-project/</url>
+      </repository>
+	
+   </distributionManagement>
   <build>
     <finalName>maven-java-web-project</finalName>
     <pluginManagement><!-- lock down plugins versions to avoid using Maven defaults (may be moved to parent pom) -->
@@ -64,4 +88,5 @@
       </plugins>
     </pluginManagement>
   </build>
+  
 </project>
